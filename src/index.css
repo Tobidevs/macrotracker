@@ -4,8 +4,10 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Lao Sans Pro", "Lucida Sans Unicode", "Lucida Grande",
+  font-family: "Noto Sans Lao", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+  
   background: #1f2022;
   color: #eff0fa;
 }
