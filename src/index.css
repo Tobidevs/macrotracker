@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Lao Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background: #1F2022;
-  color: #EFF0FA;
-
+  font-family: "Lao Sans Pro", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: #1f2022;
+  color: #eff0fa;
 }
