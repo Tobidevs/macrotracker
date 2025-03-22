@@ -1,3 +1,4 @@
+import AddFood from "../components/AddFood";
 import NavBar from "../components/NavBar";
 import Stats from "../components/Stats";
 function Dashboard() {
@@ -5,6 +6,7 @@ function Dashboard() {
     <>
       <NavBar />
       <Stats/>
+      <AddFood/>
     </>
   );
 }
