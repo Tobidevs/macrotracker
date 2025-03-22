@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/dashboard.tsx";
 import Foodlog from "./pages/foodlog.tsx";
-import Foodlogger from "./pages/foodlogger.tsx"
+import Foodlogger from "./pages/foodlogger.tsx";
 function App() {
   return (
     <>
