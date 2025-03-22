@@ -4,9 +4,11 @@ import Stats from "../components/Stats";
 function Dashboard() {
   return (
     <>
-      <NavBar />
-      <Stats/>
-      <AddFood/>
+      <div className="pt-32">
+        <NavBar />
+        <Stats />
+        <AddFood />
+      </div>
     </>
   );
 }
