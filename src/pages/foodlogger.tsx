@@ -1,11 +1,25 @@
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
+import getFoods from '../services/api'
 import NavBar from "../components/NavBar";
 import FoodCard from "../components/FoodCard";
 
 function Foodlogger() {
   const [searchQuery, setSearchQuery] = useState("");
-  const handleSubmit = () => {
+  useEffect(() => {
+    const loadFoods = async () => {
+      try {
+        
+      } catch (err) {
+
+      } finally {
+
+      }
+    }
+    loadFoods() 
+      
+    }, [])
+
+  const handleSearch = () => {
     return;
   };
   return (
@@ -15,11 +29,11 @@ function Foodlogger() {
         <main className="h-3/4 flex justify-center">
           <div className=" w-1/3 bg-[#1D1D20] rounded-3xl">
             <div className="h-1/8 w-full flex justify-center items-center ">
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSearch}>
                 <input
                   type="text"
                   placeholder="Search Food..."
-                  className="bg-[#eff0fa] text-[#1f2022] rounded-4xl pl-5 pt-3 pb-3 w-60 text-sm"
+                  className="bg-[#eff0fa] text-[#1f2022] rounded-4xl pl-5 pt-3 pb-3 w-66 text-sm"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />

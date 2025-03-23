@@ -11,18 +11,18 @@ function FoodCard() {
             <h1 className="text-xl">6 oz serving</h1>
           </div>
 
-          <div className="flex gap-6 text-xl">
-            <h1 className="">
-              301<span className="text-[#708EDF] ml-1">C</span>
+          <div className="flex gap-5 text-xl">
+            <h1>
+              301<span className="text-[#708EDF]">C</span>
             </h1>
-            <h1 className="">
-              12<span className="text-[#FF7C6B] ml-1">P</span>
+            <h1>
+              12 <span className="text-[#FF7C6B]">P</span>
             </h1>
-            <h1 className="">
-              10<span className="text-[#FFE864] ml-1">F</span>
+            <h1>
+              10 <span className="text-[#FFE864]">F</span>
             </h1>
-            <h1 className="">
-              28<span className="text-[#91EA68] ml-1">C</span>
+            <h1>
+              28 <span className="text-[#91EA68]">C</span>
             </h1>
           </div>
         </div>
