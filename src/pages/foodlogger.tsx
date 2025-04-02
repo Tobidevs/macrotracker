@@ -1,23 +1,26 @@
 import { useState, useEffect } from "react";
-import getFoods from '../services/api'
+import searchFoods from "../services/api";
 import NavBar from "../components/NavBar";
 import FoodCard from "../components/FoodCard";
 
 function Foodlogger() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const loadFoods = async () => {
       try {
-        
+        const foods = await searchFoods();
+        setSearchQuery(foods);
       } catch (err) {
-
+        console.log(err);
+        setError("Failed to load movies...");
       } finally {
-
+        setLoading(false);
       }
-    }
-    loadFoods() 
-      
-    }, [])
+    };
+    loadFoods();
+  }, []);
 
   const handleSearch = () => {
     return;
